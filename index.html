@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АТ «ПромСпецМутація» | Ательє Персональної Величі та Супергероїв</title>
+    <meta name="description" content="Ексклюзивне проектування та синтез супергероїв для вишуканої аудиторії. Унікальна генетика, квантова броня та інтелектуальна досконалість з тонким почуттям гумору.">
+    <!-- Google Fonts: Cormorant Garamond & Manrope with Cyrillic support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Прелоадер для Luxury-ефекту -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">АТ «ПромСпецМутація»</div>
+            <div class="loader-subtitle">СИНТЕЗ НАДМОЖЛИВОСТЕЙ</div>
+            <div class="loader-progress-container">
+                <div class="loader-progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="loader-percentage" id="loader-percent">0%</div>
+            <div class="loader-status" id="loader-status">Ініціалізація генетичних протоколів...</div>
+        </div>
+    </div>
+
+    <!-- Шапка сайту -->
+    <header class="navbar">
+        <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 5L90 28.1V71.9L50 95L10 71.9V28.1L50 5Z" stroke="url(#gold-grad)" stroke-width="2"/>
+                <path d="M50 15L80 32.3V67.7L50 85L20 67.7V32.3L50 15Z" stroke="url(#gold-grad)" stroke-width="1" stroke-dasharray="4 2"/>
+                <circle cx="50" cy="50" r="12" stroke="url(#gold-grad)" stroke-width="2"/>
+                <line x1="50" y1="5" x2="50" y2="95" stroke="url(#gold-grad)" stroke-width="1" stroke-opacity="0.3"/>
+                <line x1="10" y1="28.1" x2="90" y2="71.9" stroke="url(#gold-grad)" stroke-width="1" stroke-opacity="0.3"/>
+                <line x1="10" y1="71.9" x2="90" y2="28.1" stroke="url(#gold-grad)" stroke-width="1" stroke-opacity="0.3"/>
+                <defs>
+                    <linearGradient id="gold-grad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#C5A880"/>
+                        <stop offset="50%" stop-color="#E5C453"/>
+                        <stop offset="100%" stop-color="#9A7B56"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <span class="logo-text">АТ «ПромСпецМутація»</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#philosophy" class="nav-link">Філософія</a>
+            <a href="#process" class="nav-link">Створення</a>
+            <a href="#gallery" class="nav-link">Колекція</a>
+            <a href="#apply" class="nav-link">Замовити</a>
+            <a href="#contacts" class="nav-link">Контакти</a>
+        </nav>
+        <div class="nav-cta">
+            <a href="#apply" class="btn btn-gold btn-outline">Консультація</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Відкрити меню">
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Мобільне меню -->
+    <div class="mobile-menu">
+        <nav class="mobile-nav-links">
+            <a href="#philosophy" class="mobile-link">Філософія</a>
+            <a href="#process" class="mobile-link">Створення</a>
+            <a href="#gallery" class="mobile-link">Колекція</a>
+            <a href="#apply" class="mobile-link">Замовити</a>
+            <a href="#contacts" class="mobile-link">Контакти</a>
+            <a href="#apply" class="btn btn-gold btn-outline mobile-btn">Консультація</a>
+        </nav>
+    </div>
+
+    <!-- Hero-секція зі Scrollytelling -->
+    <section class="hero-scroll" id="hero">
+        <div class="hero-canvas-container">
+            <canvas id="scrollytelling-canvas"></canvas>
+            <div class="canvas-overlay"></div>
+        </div>
+        
+        <!-- Скрол-кроки для зміни текстів -->
+        <div class="hero-narrative">
+            <div class="story-step active" id="step-1">
+                <div class="story-content">
+                    <span class="sub-title">АВАНГАРДНА СИНЕРГІЯ</span>
+                    <h1>Ми не просто створюємо супергероїв</h1>
+                    <p class="lead">Ми проектуємо персональні легенди для тих, хто вже володіє світом, але прагне більшого.</p>
+                    <div class="scroll-indicator">
+                        <div class="arrow-down"></div>
+                        <span>Гортайте вниз для старту синтезу</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="story-step" id="step-2">
+                <div class="story-content">
+                    <span class="sub-title">ГЕНЕТИЧНИЙ КУТЮР</span>
+                    <h2>Унікальна біо-архітектура</h2>
+                    <p>Кожен мускул, нейронний зв'язок та метаболічний контур розробляються індивідуально. Ніяких конвеєрних мутацій — тільки чиста персоналізована еволюція.</p>
+                </div>
+            </div>
+
+            <div class="story-step" id="step-3">
+                <div class="story-content">
+                    <span class="sub-title">ОБЛАДУНКИ КЛАСУ DE LUXE</span>
+                    <h2>Матеріалізація величі</h2>
+                    <p>Квантовий захист, інтегрований у тканини від кутюр. Наші супергерої рятують всесвіт зі стилем, який затьмарює будь-які червоні доріжки.</p>
+                </div>
+            </div>
+
+            <div class="story-step" id="step-4">
+                <div class="story-content">
+                    <span class="sub-title">МЕНТАЛЬНИЙ ТРІУМФ</span>
+                    <h2>Інтелект богів</h2>
+                    <p>Психо-когнітивне налаштування преміум-рівня. Ваш герой не просто літає — він знає теорію струн, цитує класиків та ніколи не забуває пароль від Wi-Fi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секція II: Філософія -->
+    <section class="section philosophy-section" id="philosophy">
+        <div class="container">
+            <div class="grid grid-2">
+                <div class="philosophy-text-block">
+                    <span class="section-tag">ФІЛОСОФІЯ ВИШУКАНОЇ СИЛИ</span>
+                    <h2 class="section-title">Естетика абсолюту</h2>
+                    <p class="philosophy-p">Звичайні герої з'являються через випадкові радіоактивні укуси або падіння у чани з хімікатами. Ми вважаємо це несмаком. У <span>АТ «ПромСпецМутація»</span> ми перетворюємо створення надлюдини на високе мистецтво.</p>
+                    <p class="philosophy-p text-muted">Ми поєднуємо молекулярну гастрономію генетики із прет-а-порте нанотехнологій. Кожен наш витвір — це поєднання безкомпромісної сили та вишуканих манер. Наші супергерої вміють не лише зупиняти метеорити, а й правильно тримати келих з шампанським на світських раутах.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-num">99.9%</span>
+                            <span class="stat-label">Сумісність ДНК (без хвостів)</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">0%</span>
+                            <span class="stat-label">Випадкових мутацій у жабу</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="philosophy-visual">
+                    <div class="interactive-matrix-card">
+                        <!-- Преміальна SVG анімація "Квантова матриця" -->
+                        <svg class="matrix-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <radialGradient id="glow-grad" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.3"/>
+                                    <stop offset="100%" stop-color="#080809" stop-opacity="0"/>
+                                </radialGradient>
+                                <linearGradient id="line-grad" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#C5A880"/>
+                                    <stop offset="100%" stop-color="#5A4731"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Фонові кола світіння -->
+                            <circle cx="200" cy="200" r="160" fill="url(#glow-grad)" />
+                            
+                            <!-- Геометрична матриця -->
+                            <g class="matrix-grid">
+                                <circle cx="200" cy="200" r="140" stroke="url(#line-grad)" stroke-width="1" stroke-opacity="0.2" fill="none"/>
+                                <circle cx="200" cy="200" r="100" stroke="url(#line-grad)" stroke-width="1.5" stroke-opacity="0.4" fill="none" stroke-dasharray="10 5"/>
+                                <circle cx="200" cy="200" r="60" stroke="url(#line-grad)" stroke-width="2" stroke-opacity="0.6" fill="none"/>
+                            </g>
+                            
+                            <!-- Генетична спіраль в центрі -->
+                            <path class="dna-strand dna-1" d="M160,200 Q180,160 200,200 T240,200" stroke="#C5A880" stroke-width="3" fill="none" stroke-linecap="round"/>
+                            <path class="dna-strand dna-2" d="M160,200 Q180,240 200,200 T240,200" stroke="#FFFFFF" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-dasharray="3 3"/>
+                            
+                            <!-- Орбітальні вузли (електрони квантової сили) -->
+                            <g class="nodes">
+                                <circle class="node node-1" cx="200" cy="60" r="6" fill="#D4AF37"/>
+                                <circle class="node node-2" cx="340" cy="200" r="4" fill="#FFFFFF"/>
+                                <circle class="node node-3" cx="200" cy="340" r="5" fill="#C5A880"/>
+                                <circle class="node node-4" cx="60" cy="200" r="6" fill="#FFFFFF"/>
+                            </g>
+                            
+                            <!-- Допоміжні вимірювальні лінії -->
+                            <line x1="200" y1="30" x2="200" y2="370" stroke="#C5A880" stroke-width="0.5" stroke-opacity="0.2" stroke-dasharray="2 2"/>
+                            <line x1="30" y1="200" x2="370" y2="200" stroke="#C5A880" stroke-width="0.5" stroke-opacity="0.2" stroke-dasharray="2 2"/>
+                        </svg>
+                        <div class="matrix-ui-overlay">
+                            <div class="ui-tag">АКТИВНИЙ СИНТЕЗ</div>
+                            <div class="ui-coords">R: 6.273 // Q-STAT: NOMINAL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секція III: Етапи створення (Процес) -->
+    <section class="section process-section" id="process">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">ТЕХНОЛОГІЧНИЙ РИТУАЛ</span>
+                <h2 class="section-title">Як створюється ваша досконалість</h2>
+                <p class="section-subtitle">Ми розбили процес еволюції на три вишукані етапи, додавши дрібку шляхетного сервісу та технологічної магії.</p>
+            </div>
+            
+            <div class="process-steps">
+                
+                <!-- Крок 1 -->
+                <div class="process-step-row">
+                    <div class="step-num-col">
+                        <span class="big-num">01</span>
+                    </div>
+                    <div class="step-content-col">
+                        <h3>Генетичний дизайн ДНК</h3>
+                        <p>Наші біо-інженери збирають унікальну спіраль ДНК. Ви обираєте базовий архетип, а ми доповнюємо його преміальними модифікаціями.</p>
+                        
+                        <div class="mods-container">
+                            <span class="mod-title">Опціональні преміум-модифікації:</span>
+                            <div class="mod-tags">
+                                <span class="mod-tag">Регенерація клітин (100 років без зморшок)</span>
+                                <span class="mod-tag">Абсолютний імунітет до нудних розмов</span>
+                                <span class="mod-tag">Інстинктивне знання правильного боку підковдри</span>
+                                <span class="mod-tag">Нейро-блок від токсичних коментарів</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-visual-col">
+                        <div class="svg-anim-box">
+                            <!-- SVG Генетичного сканування -->
+                            <svg viewBox="0 0 200 200" class="step-svg" xmlns="http://www.w3.org/2000/svg">
+                                <g transform="translate(100,100)">
+                                    <circle r="80" stroke="#C5A880" stroke-width="1" stroke-dasharray="5 10" fill="none" opacity="0.3"/>
+                                    <g class="pulse-circle">
+                                        <circle r="50" stroke="#D4AF37" stroke-width="1.5" fill="none"/>
+                                    </g>
+                                    <!-- Генетичні палички -->
+                                    <line x1="-30" y1="-30" x2="30" y2="30" stroke="#FFFFFF" stroke-width="2"/>
+                                    <line x1="-30" y1="30" x2="30" y2="-30" stroke="#C5A880" stroke-width="2"/>
+                                    <circle cx="-30" cy="-30" r="5" fill="#D4AF37"/>
+                                    <circle cx="30" cy="30" r="5" fill="#C5A880"/>
+                                    <circle cx="-30" cy="30" r="5" fill="#C5A880"/>
+                                    <circle cx="30" cy="-30" r="5" fill="#FFFFFF"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Крок 2 -->
+                <div class="process-step-row reverse">
+                    <div class="step-num-col">
+                        <span class="big-num">02</span>
+                    </div>
+                    <div class="step-content-col">
+                        <h3>Квантова екіпіровка & Стиль</h3>
+                        <p>Супергеройський костюм — це не просто захист, це ваше друге «я». Наші дизайнери створюють розумну броню з нано-волокон, що ідеально облягає силует і витримує пряме попадання артилерійського снаряду.</p>
+                        
+                        <div class="mods-container">
+                            <span class="mod-title">Технологічні деталі екіпірування:</span>
+                            <div class="mod-tags">
+                                <span class="mod-tag">Матеріал: Рідкий обсидіан та ефірний шовк</span>
+                                <span class="mod-tag">Клімат-контроль від -273°C до +1000°C</span>
+                                <span class="mod-tag">Кишені, які ніколи не відстовбурчуються</span>
+                                <span class="mod-tag">Самоочищення від пилу та крові ворогів</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-visual-col">
+                        <div class="svg-anim-box">
+                            <!-- SVG Нано-щита -->
+                            <svg viewBox="0 0 200 200" class="step-svg" xmlns="http://www.w3.org/2000/svg">
+                                <g transform="translate(100,100)">
+                                    <polygon points="0,-70 60,-35 60,35 0,70 -60,35 -60,-35" stroke="#C5A880" stroke-width="1.5" fill="none" class="hex-pulse"/>
+                                    <polygon points="0,-50 43,-25 43,25 0,50 -43,25 -43,-25" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
+                                    <circle cx="0" cy="0" r="15" fill="#D4AF37" opacity="0.8"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Крок 3 -->
+                <div class="process-step-row">
+                    <div class="step-num-col">
+                        <span class="big-num">03</span>
+                    </div>
+                    <div class="step-content-col">
+                        <h3>Психо-когнітивна інтеграція</h3>
+                        <p>Ми завантажуємо в підсвідомість героя вишуканий когнітивний стек. Ніякої сліпої агресії — тільки виважений тактичний розрахунок та бездоганний етикет.</p>
+                        
+                        <div class="mods-container">
+                            <span class="mod-title">Базовий ментальний софт:</span>
+                            <div class="mod-tags">
+                                <span class="mod-tag">Знання 450 галактичних мов та галицького діалекту</span>
+                                <span class="mod-tag">Етикет династії Мін (на випадок чаювання)</span>
+                                <span class="mod-tag">Аналітичне мислення рівня суперкомп'ютера</span>
+                                <span class="mod-tag">Абсолютний спокій при читанні новин</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-visual-col">
+                        <div class="svg-anim-box">
+                            <!-- SVG Ментального лазера -->
+                            <svg viewBox="0 0 200 200" class="step-svg" xmlns="http://www.w3.org/2000/svg">
+                                <g transform="translate(100,100)">
+                                    <circle r="60" stroke="#C5A880" stroke-width="1.5" fill="none"/>
+                                    <!-- Мозок геометричний -->
+                                    <path d="M-30,-10 C-30,-40 30,-40 30,-10 C45,-10 45,20 30,20 C30,40 -30,40 -30,20 C-45,20 -45,-10 -30,-10 Z" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+                                    <line x1="0" y1="-40" x2="0" y2="40" stroke="#D4AF37" stroke-width="0.5" stroke-dasharray="4 2"/>
+                                    <!-- Сяючі думки -->
+                                    <circle cx="-15" cy="-10" r="3" fill="#D4AF37"/>
+                                    <circle cx="15" cy="10" r="3" fill="#D4AF37"/>
+                                    <circle cx="0" cy="20" r="3" fill="#FFFFFF"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Секція IV: Галерея шедеврів (Колекція) -->
+    <section class="section gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">ЕКСКЛЮЗИВНИЙ ШОРТ-ЛИСТ</span>
+                <h2 class="section-title">Наші легендарні витвори</h2>
+                <p class="section-subtitle">Портфоліо супергероїв, які вже виконують свої делікатні місії у різних куточках всесвіту.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                
+                <!-- Герой 1 -->
+                <div class="gallery-card">
+                    <div class="card-img-wrapper">
+                        <img src="illustrations/viktor_k.webp" alt="Супергерой Віктор К.">
+                        <div class="card-overlay-glow"></div>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-class">КЛАС: ДЕРАТИЗАЦІЙНИЙ АРИСТОКРАТ</span>
+                        <h3>Віктор К.</h3>
+                        <p class="card-desc">Проектувався як людина-щур елітного рангу. Здатний проникнути у будь-яку шпарину та домовитися з будь-яким швейцарським сиром.</p>
+                        <ul class="card-features">
+                            <li>Бачить знижки на сир за 10 кілометрів</li>
+                            <li>Абсолютний імунітет до кави з автомата</li>
+                            <li>Вміє абсолютно беззвучно шелестіти пакетом</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Герой 2 -->
+                <div class="gallery-card">
+                    <div class="card-img-wrapper">
+                        <img src="illustrations/konstantin_k.webp" alt="Супергерой Костянтин К.">
+                        <div class="card-overlay-glow"></div>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-class">КЛАС: РЕПТИЛОЇД ВІД КУТЮР</span>
+                        <h3>Костянтин К.</h3>
+                        <p class="card-desc">Синтезований під впливом елітних мутагенів. Замість каналізації живе у пентхаусі, замість піци замовляє брускету з трюфелем.</p>
+                        <ul class="card-features">
+                            <li>Майстерність нарізки хамону золотими катанами</li>
+                            <li>Здатність заховатися у панцир від податкової</li>
+                            <li>Смарагдовий костюм ідеально пасує до очей</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Герой 3 -->
+                <div class="gallery-card">
+                    <div class="card-img-wrapper">
+                        <img src="illustrations/alex_k.webp" alt="Супергерой Олексій К.">
+                        <div class="card-overlay-glow"></div>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-class">КЛАС: БЮДЖЕТНИЙ КРИПТОНЕЦЬ</span>
+                        <h3>Олексій К.</h3>
+                        <p class="card-desc">Супермен нашої колекції. Може літати швидше за звук (якщо рейс не затримують) та підігрівати круасани лазерним поглядом.</p>
+                        <ul class="card-features">
+                            <li>Може силою думки підняти самооцінку колеги</li>
+                            <li>Контролює, чи не п'ють його йогурт на офісній кухні</li>
+                            <li>Ідеальна укладка волосся навіть у стратосфері</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Секція V: Запит (Форма замовлення) -->
+    <section class="section apply-section" id="apply">
+        <div class="container">
+            <div class="apply-box">
+                <div class="apply-header text-center">
+                    <span class="section-tag">ПРИВАТНИЙ СИНТЕЗ</span>
+                    <h2>Почніть проектування спадщини</h2>
+                    <p>Надішліть конфіденційний запит. Наш персональний менеджер-генетик зв'яжеться з вами через зашифрований канал зв'язку.</p>
+                </div>
+                
+                <form class="apply-form" id="concierge-form" onsubmit="event.preventDefault(); alert('Дякуємо! Наш консьєрж-генетик вже вилетів до вас на золотому гвинтокрилі.');">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="client-name">Ваше ім'я / Псевдонім</label>
+                            <input type="text" id="client-name" placeholder="Наприклад, Брюс Уейн" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="client-email">Канал зв'язку (Email/Телеграф)</label>
+                            <input type="email" id="client-email" placeholder="lord@mansion.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="hero-archetype">Основна стихія героя</label>
+                            <select id="hero-archetype">
+                                <option value="cosmic">Космічна сингулярність (Для подорожей між зірками)</option>
+                                <option value="tech">Квантова кібернетика (Для керування криптою та розумним будинком)</option>
+                                <option value="bio">Чиста біо-модифікація (Сила 500 слонів та грація пантери)</option>
+                                <option value="household">Побутова магія (Здатність мити посуд поглядом)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="hero-budget">Рівень фінансування проекту</label>
+                            <select id="hero-budget">
+                                <option value="unlimited">Безлімітний (Бюджет невеликої країни)</option>
+                                <option value="galactic">Галактичний (Готовий продати кілька метеоритів)</option>
+                                <option value="funny">Символічний (Віддам останній шматочок піци)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hero-custom">Особливі побажання (Наприклад: імунітет до кави 3-в-1 або вміння літати задом наперед)</label>
+                        <textarea id="hero-custom" rows="4" placeholder="Опишіть суперсилу вашої мрії..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="cape-warning" required>
+                        <label for="cape-warning">Я підтверджую, що ознайомлений із правилом Едни Мод: «НІЯКИХ ПЛАЩІВ!» і беру на себе всі ризики засмоктування в турбіну літака.</label>
+                    </div>
+
+                    <div class="text-center form-submit">
+                        <button type="submit" class="btn btn-gold btn-block">Надіслати секретний запит</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секція VI: Контакти та Реквізити -->
+    <section class="section contacts-section" id="contacts">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">ОФІЦІЙНИЙ ВІДДІЛ</span>
+                <h2 class="section-title">Контакти & Реквізити</h2>
+                <p class="section-subtitle">Важлива інформація для замовників, кур'єрів та міжгалактичних інспекторів.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Карта 1: Зв'язок -->
+                <div class="contact-card">
+                    <h3>Зв'язок та Адреса</h3>
+                    <div class="contact-item">
+                        <span class="contact-label">Юридична адреса:</span>
+                        <p>01001, Україна, м. Київ, вул. Велика Радіаційна, буд. 13-Б, корпус 4</p>
+                        <p class="contact-note">(вхід через третій каналізаційний люк ліворуч від пам'ятника першому піддослідному хом'яку)</p>
+                        <p class="contact-courier"><strong>Кур'єрам:</strong> Якщо двері зачинені, будь ласка, пошелестіть пакетом або постукайте золотою катаною тричі.</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Зв'язок з громадськістю (та іншими гуманоїдами):</span>
+                        <p><strong>0-800-MUTANT (0-800-688268)</strong></p>
+                        <p class="contact-note">Дзвінки безкоштовні. Для телепатів — трансляція думки одразу в комерційний відділ.</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Секретаріат (прийом скарг на зайві кінцівки):</span>
+                        <p><strong>+380 (44) 666-X-MEN</strong></p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Електронна пошта для спаму:</span>
+                        <p><a href="mailto:superhero.delivery@promspecmutacia.ua">superhero.delivery@promspecmutacia.ua</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Зашифрований канал у Telegram:</span>
+                        <p><a href="https://t.me/Pravda_v_Pancyri" target="_blank">@Pravda_v_Pancyri</a></p>
+                    </div>
+                </div>
+
+                <!-- Карта 2: Графік роботи -->
+                <div class="contact-card">
+                    <h3>Графік роботи</h3>
+                    <ul class="schedule-list">
+                        <li>
+                            <span class="schedule-days">Понеділок — Четвер:</span>
+                            <span class="schedule-hours">09:00 — 18:00</span>
+                            <p class="schedule-note">Обідня перерва з 13:00 до 14:00 (колективне підігрівання круасанів лазерним поглядом).</p>
+                        </li>
+                        <li>
+                            <span class="schedule-days">П'ятниця:</span>
+                            <span class="schedule-hours">09:00 — 16:45</span>
+                            <p class="schedule-note">Після цього — нічні вилазки за акційним сиром.</p>
+                        </li>
+                        <li>
+                            <span class="schedule-days">Субота — Неділя:</span>
+                            <span class="schedule-hours">Вихідні</span>
+                            <p class="schedule-note">Усі співробітники ховаються у панцир від податківців.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Карта 3: Департамент оплати -->
+                <div class="contact-card">
+                    <h3>Реквізити для донатів</h3>
+                    <div class="contact-item">
+                        <span class="contact-label">Рахунок в банку:</span>
+                        <p class="bank-account">UA 777ГЕН0000000000018РОКІВ</p>
+                        <p class="contact-note">в АТ «Криптон-Таск-Банк»</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Приймаємо до оплати:</span>
+                        <div class="payment-methods">
+                            <span class="pay-method">Гривні</span>
+                            <span class="pay-method">Біткоїни</span>
+                            <span class="pay-method">Швейцарський сир із пліснявою</span>
+                            <span class="pay-method">Криптоніт (за курсом НБУ)</span>
+                            <span class="pay-method">Свіжий хамон</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Важливе застереження на бланку -->
+            <div class="official-disclaimer-box">
+                <div class="disclaimer-title">ВАЖЛИВЕ ЗАСТЕРЕЖЕННЯ НА БЛАНКУ АТ «ПРОМСПЕЦМУТАЦІЯ»</div>
+                <p>«АТ "ПромСпецМутація" не несе відповідальності за спонтанне бажання клієнта рятувати світ у трусах поверх лосин або за несанкціоноване зникнення йогуртів з офісних холодильників».</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <span class="footer-logo">АТ «ПромСпецМутація»</span>
+                    <p>Створення легенд класу делюкс. Безпека, конфіденційність та бездоганний стиль з 2026 року.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Навігація</h4>
+                    <ul>
+                        <li><a href="#philosophy">Філософія</a></li>
+                        <li><a href="#process">Процес</a></li>
+                        <li><a href="#gallery">Колекція</a></li>
+                        <li><a href="#apply">Запит</a></li>
+                        <li><a href="#contacts">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h4>Конфіденційність</h4>
+                    <ul>
+                        <li><a href="#">Угода про нерозголошення суперсил</a></li>
+                        <li><a href="#">Політика щодо випадкових мутацій</a></li>
+                        <li><a href="#">Кодекс честі ліги героїв</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 АТ «ПромСпецМутація». Всі права на генетичний код захищено.</p>
+                <p class="footer-disclaimer">Застереження: АТ «ПромСпецМутація» не несе відповідальності за випадкове створення суперлиходіїв, спроби захоплення світу, побічні ефекти у вигляді світіння в темряві або якщо ваш герой категорично відмовиться виносити сміття чи мити за собою чашку.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальне вікно для перегляду зображень (Lightbox) -->
+    <div id="lightbox-modal" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Перегляд зображення">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- Підключення GSAP та ScrollTrigger через CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
